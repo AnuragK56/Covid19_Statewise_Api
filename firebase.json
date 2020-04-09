@@ -1,16 +1,16 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites":[
-        {
-          "source":"/timestamp",
-          "function":"app"
-        }
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/api/getStatewiseSorted",
+        "function": "app"
+      },
+      {
+        "source": "/api/getStatewise",
+        "function": "app"
+      }
     ]
   }
 }
